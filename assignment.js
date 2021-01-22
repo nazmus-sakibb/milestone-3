@@ -76,8 +76,8 @@ function megaFriend(friendsName) {
     var longestElement = 0;
     var largestName;
     for (var i = 0; i < friendsName.length; i++) {
-        if (friendsName[i] < 1 || friendsName[i] >= 1) {
-            return 'The name of a friend can not be a number';
+        if (friendsName[i] < 1 || friendsName[i] >= 1 || friendsName[i] == '') {
+            return 'The name of a friend can not be a number or null value';
         } 
         else if (friendsName[i].length > longestElement) {
             longestElement = friendsName[i].length;
